@@ -19,6 +19,8 @@ documents = []
 
 # Koristenje loop-a za iteriranje kroz sve datoteke u direktoriju dokumenata
 for filename in os.listdir(documents_directory):
+	if not filename.endswith(".pdf"):
+		continue
 	document = PyPDFLoader(os.path.join(documents_directory, filename)).load_and_split()
 	documents.append(document)
 

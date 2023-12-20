@@ -1,3 +1,5 @@
 langchain==0.0.351
 langchain_core==0.1.1
 openai==1.5.0
+sentence-transformers==2.2.2
+PyQt6=6.6.1
